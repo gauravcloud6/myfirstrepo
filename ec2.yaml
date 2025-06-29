@@ -1,1 +1,8 @@
 # EC2 Template
+Resource:
+  MyWebServer:
+    Type: EC2::Instance
+    Properties:
+      instance_type: t2.micro
+      image: ami-123
+      key_pair: myec2key
